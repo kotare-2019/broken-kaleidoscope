@@ -10,34 +10,253 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
-        <Pixel style={this.state.style} />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
       </div >
     )
   }
