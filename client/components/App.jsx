@@ -36,6 +36,32 @@ class App extends React.Component {
       <Pixel/>
       <Pixel/>
       <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+
+
+
+
     </div>
     )
   }
