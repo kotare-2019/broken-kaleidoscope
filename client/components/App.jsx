@@ -6,17 +6,65 @@ class App extends React.Component {
   super(props)
 
   this.state = {
-    style: { height: '50px',
-         width: '50px',
-         backgroundColor: 'cornflowerblue', }
+    // style: { height: '50px',
+    //      width: '50px',
+    //      backgroundColor: 'cornflowerblue', }
   }
 }
 
   render() {
    return (
     <div>
-      <Pixel style={this.state.style}/>
-    
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
     </div>
     )
   }

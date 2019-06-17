@@ -1,17 +1,6 @@
 import React from 'react'
 
-const Pixel = props => {
-  return (
-   <div id="blue" style = {props.style}></div> 
-  )
-}
-
-
-export default Pixel
-
-//to change
-
-class App extends React.Component {
+class Pixel extends React.Component {
   constructor(props) {
   super(props)
 
@@ -24,10 +13,9 @@ class App extends React.Component {
 
   render() {
    return (
-    <div>
-      <Pixel style={this.state.style}/>
-    
-    </div>
+    <div style={this.state.style}></div>
     )
   }
 }
+
+export default Pixel
