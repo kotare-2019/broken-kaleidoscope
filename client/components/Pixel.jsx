@@ -1,17 +1,24 @@
 import React from 'react'
 
-const Pixel = () => {
-  return (
-    <div style={{
-      height: '50px',
-      width: '50px',
+class Pixel extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state= {
+      style: {
+      height: '100px',
+      width: '100px',
       backgroundColor: 'pink'
+      }
+    }
+  }
+  render(){
+    return (
+      <div style={this.state.style}></div>
+    
+      )
 
-
-
-    }}></div>
-  
-    )
+  }
 }
 
 export default Pixel
