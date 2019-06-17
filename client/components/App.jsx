@@ -1,8 +1,12 @@
 import React from 'react'
+import ReturnDiv from './ReturnDiv'
 
 const App = () => {
   return (
-    <div>React development has begun!</div>
+    <div>
+      <div>React development has begun!</div>
+      {ReturnDiv()}
+    </div>
   )
 }
 
