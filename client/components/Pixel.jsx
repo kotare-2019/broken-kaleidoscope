@@ -1,5 +1,15 @@
 import React from 'react'
-import Pixel from './Pixel'
+
+const Pixel = props => {
+  return (
+   <div id="blue" style = {props.style}></div> 
+  )
+}
+
+
+export default Pixel
+
+//to change
 
 class App extends React.Component {
   constructor(props) {
@@ -21,5 +31,3 @@ class App extends React.Component {
     )
   }
 }
-
-export default App
