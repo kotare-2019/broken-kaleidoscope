@@ -5,29 +5,42 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {
-      value: 0,
-    }
   }
-  return(
-    <div>
-  <div>React development has begun!</div>
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-    </div >
-  )
+
+  render() {
+    return (
+      <div>
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+        <Pixel style={this.state.style} />
+      </div >
+    )
+  }
 }
 
 export default App
