@@ -1,77 +1,81 @@
 import React from 'react'
-import OnlyJob from './OnlyJob'
+import Pixel from './Pixel'
 
-const App = () => {
-  return (
-    <div>
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
-      <OnlyJob />
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    return (
+      <div>
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
 
-    </div>
-  )
+      </div>
+    )
+  }
 }
-
 export default App
 
