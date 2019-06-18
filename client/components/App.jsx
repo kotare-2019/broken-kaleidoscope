@@ -6,64 +6,11 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-   
-    
-  } 
-  
+
+  }
+
   render() {
-    return (
-      <div>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-      <Pixel/>
-
-
-
-
-    </div>
-    )
+    return Array.from({ length: 10000 }, () => <Pixel />)
   }
 }
 
