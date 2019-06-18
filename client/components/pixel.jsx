@@ -1,7 +1,7 @@
 import React from 'react'
 
 const randomHexColor = () =>
-  `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+    `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
 
 
 class Pixel extends React.Component {
@@ -10,28 +10,68 @@ class Pixel extends React.Component {
         this.state = {
             style: {
                 backgroundColor: randomHexColor(),
-                height: '20px',
-                width: '20px'
+                height: '1px',
+                width: '1px',
             }
         }
-        
     }
-    // clickHandler =evt => {
-    //     this.setState({
-    //         clickHandler = onClick.click.bind 
-    //     })
-    // }
 
-    render() {
+    clickHandler = evt => {
+        this.setState({
+            style: {
+                backgroundColor: randomHexColor(),
+                height: '1px',
+                width: '1px',
+            }
+        })
+    }
+    onMouseEnter = evt => {
+        this.setState({
+            style: {
+                backgroundColor: 'green',
+                height: '1px',
+                width: '1px',
+            }
+        })
+    }
+    onContextMenu = evt => {
        
+        this.setState({
+            style: {
+                backgroundColor: 'black',
+                height: '1px',
+                width: '1px',
+            }
+        })
+    }
+    onDoubleClick= evt => {
+        this.setState({
+            style: {
+                backgroundColor: 'white',
+                height: '1px',
+                width: '1px',
+            }
+        })
+    }   
+    onDragEnter= evt => {
+         evt.preventDefault()
+        this.setState({
+            style: {
+                backgroundColor: 'yellow',
+                height: '1px',
+                width: '1px',
+            }
+        })
+    } 
+    
+    render() {
         return (
-            <div>
-                <div style={this.state.style}>
-                </div>
-            </div>
+            <div style={this.state.style} onClick={this.clickHandler} onMouseEnter={this.onMouseEnter} onContextMenu={this.onContextMenu} onDoubleClick={this.onDoubleClick} onDragEnter={this.onDragEnter}></div>
         )
     }
 }
+
+
 
 export default Pixel
 

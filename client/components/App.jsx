@@ -4,40 +4,15 @@ import Pixel from './pixel'
 
 
 const App = () => {
-  return (
-    <div>
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> 
-      
-    </div>
+  // return [
+  // <Pixel />,
+  // <Pixel />,
+  // <Pixel />,
+  // <Pixel />
+  // ]
+  
+  return Array.from( { length: 100000 }, () => <Pixel />
   )
 }
-
+  
 export default App
