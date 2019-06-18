@@ -20,11 +20,66 @@ class Pixel extends React.Component {
       .toString(16)
       .padStart(6, 0)}`
 
+
+  clickHandler = evt => {
+    console.log("click")
+    this.setState({
+      style: {
+        height: '50px',
+        width: '50px',
+        backgroundColor: this.randomHexColor()
+      }
+    })
+  }
+
+  onMouseEnter = evt => {
+    this.setState({
+      style: {
+        height: '50px',
+        width: '50px',
+        backgroundColor: 'pink',
+      }
+    })
+  }
+
+  onContextMenu = evt => {
+    this.setState({
+      style: {
+        height: '50px',
+        width: '50px',
+        backgroundColor: 'black',
+      }
+    })
+  }
+
+  onDoubleClick = evt => {
+    this.setState({
+      style: {
+        height: '50px',
+        width: '50px',
+        backgroundColor: 'white',
+      }
+    })
+  }
+
+  onDragEnter = evt => {
+    this.setState({
+      style: {
+        height: '50px',
+        width: '50px',
+        backgroundColor: 'yellow',
+      }
+    })
+  }
+
   render() {
     return (
-      <div style={this.state.style}></div>
+      // <div style={this.state.style}></div>
+      <div style={this.state.style} onClick={this.clickHandler} onMouseEnter={this.onMouseEnter} onContextMenu={this.onContextMenu} onDoubleClick={this.onDoubleClick} onDragEnter={this.onDragEnter} ></div>
+
     )
   }
+
 }
 
 export default Pixel
