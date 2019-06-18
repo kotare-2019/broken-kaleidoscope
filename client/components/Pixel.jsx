@@ -7,8 +7,8 @@ class Pixel extends React.Component {
         this.state = {
             style: {
                 fontFamily: 'Times New Roman',
-                height: '100px',
-                width: '100px',
+                height: '20px',
+                width: '20px',
                 backgroundColor: this.randomHexColor()
             }
         }
@@ -24,11 +24,10 @@ class Pixel extends React.Component {
     clickHandler = evt => {
         this.setState({
            style: {
-            height: '100px',   
-            width: '100px',
+            height: '20px',   
+            width: '20px',
             backgroundColor: this.randomHexColor()
            }
-         
         })
       }
 
