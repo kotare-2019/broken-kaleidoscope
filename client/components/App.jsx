@@ -9,7 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {Array.from({ length: 5 }, (v, i) => {
+        {Array.from({ length: 200 }, (v, i) => {
           // console.log(v);//the value of v will be undefined - we don't know what v is....
           // console.log(i);
           return <Test key={i} />;

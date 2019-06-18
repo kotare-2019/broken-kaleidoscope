@@ -6,7 +6,9 @@ class Test extends React.Component {
 
     this.state = {
       backgroundColor: this.randomHexColor(),
-      size: 20
+      size: 100,
+      transition: "all ease 0.3s",
+      transform: "rotate(0deg)"
     };
     this.randomHexColor = this.randomHexColor.bind(this);
     this.clickHandler = this.clickHandler.bind(this);
@@ -14,6 +16,7 @@ class Test extends React.Component {
     this.rightClick = this.rightClick.bind(this);
     this.doubleClick = this.doubleClick.bind(this);
     this.dragEnter = this.dragEnter.bind(this);
+    this.mouseLeave = this.mouseLeave.bind(this);
   }
 
   clickHandler() {
@@ -26,7 +29,8 @@ class Test extends React.Component {
 
   mouseEnter() {
     this.setState({
-      backgroundColor: "forestgreen"
+      backgroundColor: "forestgreen",
+      transform: "rotate(360deg)"
     });
   }
 
@@ -37,6 +41,12 @@ class Test extends React.Component {
     });
   };
 
+  mouseLeave() {
+    this.setState({
+      backgroundColor: this.randomHexColor(),
+      transform: "rotate(0)"
+    });
+  }
   doubleClick() {
     this.setState({
       backgroundColor: "white"
@@ -63,12 +73,15 @@ class Test extends React.Component {
         style={{
           height: `${this.state.size}px`,
           width: `${this.state.size}px`,
-          backgroundColor: this.state.backgroundColor
+          backgroundColor: this.state.backgroundColor,
+          transition: `${this.state.transition}`,
+          transform: `${this.state.transform}`
         }}
         onMouseEnter={this.mouseEnter}
         onContextMenu={this.rightClick}
         onDoubleClick={this.doubleClick}
         onDragEnter={this.dragEnter}
+        onMouseLeave={this.mouseLeave}
       />
     );
   }
