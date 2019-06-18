@@ -11,8 +11,8 @@ class Pixel extends React.Component {
         super(props)
         this.state = {
             style: {
-                height: "40px",
-                width: "40px",
+                height: "30px",
+                width: "30px",
                 backgroundColor: this.randomHexColor()
             }
         }
@@ -24,11 +24,22 @@ class Pixel extends React.Component {
         return `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
     }
 
+    // colorShift = () => {
+    //     setInterval( () => {this.setState.backgroundColor = this.randomHexColor()}, 500 )
+    // }
+
+    // setInterval ( doSomething(), 5000 );
+
+    // function doSomething ( )
+    // {
+    //     {this.setState.backgroundColor = this.randomHexColor()}, 500 )
+    // }
+
     clickHandler = (evt) => {
         this.setState({
           style: {
-              height: "40px",
-              width: "40px",
+              height: "30px",
+              width: "30px",
               backgroundColor: this.randomHexColor()
           }
         })
@@ -37,8 +48,8 @@ class Pixel extends React.Component {
     mouseOver() {
         this.setState({
             style: {
-                height: "40px",
-                width: "40px",
+                height: "30px",
+                width: "30px",
                 // transform: "rotate(90deg)",
                 transition: "all 1s ease-in-out",
                 // borderRadius: "50%",
@@ -50,7 +61,12 @@ class Pixel extends React.Component {
 
     render() {
         return (
-            <div style={this.state.style} onClick={this.clickHandler} onMouseOver={this.mouseOver}></div>
+            <div style={this.state.style} 
+                    onMouseOver={this.mouseOver} 
+                    onClick={this.clickHandler}
+                >
+
+            </div>
         )
     }
 
