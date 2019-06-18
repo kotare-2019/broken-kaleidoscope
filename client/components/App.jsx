@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {Array(1599).fill(<Pixel />)}
+        {Array(300000).fill(<Pixel />)}
       </div>
     )
   }
