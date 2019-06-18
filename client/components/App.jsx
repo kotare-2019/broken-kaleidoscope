@@ -9,11 +9,58 @@ class App extends React.Component {
       }
       
   }
-  
+
   render() {
     return (
       <div>
-        <div>React development has begun!</div>
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
+        <Pixel />
         <Pixel />
         <Pixel />
         <Pixel />
