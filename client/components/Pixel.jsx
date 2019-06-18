@@ -22,13 +22,35 @@ class Pixel extends React.Component {
     console.log('clicked')
     this.setState({
       style: {
+        width: 25,
+        height: 25,
         backgroundColor: randomHexColor(),
+      }
+    })
+  }
+  onMouseEnter = evt => {
+    this.setState({
+      style: {
+        width: 25,
+        height: 25,
+        backgroundColor: 'green',
+      }
+    })
+  }
+
+  onContextMenu = (evt) => {
+    evt.preventDefault()
+    this.setState({
+      style: {
+        width: 25,
+        height: 25,
+        backgroundColor: 'black',
       }
     })
   }
   render() {
     return (
-      <div style={this.state.style} onClick = {this.clickHandler}></div>
+      <div style={this.state.style} onClick = {this.clickHandler} onMouseEnter = {this.onMouseEnter} onContextMenu = {this.onContextMenu}></div>
     ) 
   }
 
