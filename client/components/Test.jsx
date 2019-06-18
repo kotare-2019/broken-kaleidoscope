@@ -12,6 +12,8 @@ class Test extends React.Component {
     this.clickHandler = this.clickHandler.bind(this);
     this.mouseEnter = this.mouseEnter.bind(this);
     this.rightClick = this.rightClick.bind(this);
+    this.doubleClick = this.doubleClick.bind(this);
+    this.dragEnter = this.dragEnter.bind(this);
   }
 
   clickHandler() {
@@ -35,6 +37,18 @@ class Test extends React.Component {
     });
   };
 
+  doubleClick() {
+    this.setState({
+      backgroundColor: "white"
+    });
+  }
+
+  dragEnter() {
+    this.setState({
+      backgroundColor: "yellow"
+    });
+  }
+
   randomHexColor() {
     return `#${Math.floor(Math.random() * 0x1000000)
       .toString(16)
@@ -53,6 +67,8 @@ class Test extends React.Component {
         }}
         onMouseEnter={this.mouseEnter}
         onContextMenu={this.rightClick}
+        onDoubleClick={this.doubleClick}
+        onDragEnter={this.dragEnter}
       />
     );
   }

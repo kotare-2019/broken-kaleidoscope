@@ -9,13 +9,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Test />
-        <Test />
-        <Test />
-        <Test />
-        <Test />
-        <Test />
-        <Test />
+        {Array.from({ length: 5 }, (v, i) => {
+          // console.log(v);//the value of v will be undefined - we don't know what v is....
+          // console.log(i);
+          return <Test key={i} />;
+        })}
       </div>
     );
   }
