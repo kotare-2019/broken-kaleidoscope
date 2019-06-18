@@ -10,5 +10,23 @@ html, body, .viewport {
 
 div {
   display: flex;
+  transition: 4s;
   flex-wrap: wrap;
+}
+
+.pixel {
+  animation: rotateScale 3s infinite;
+}
+
+
+/* @keyframes rotateScale {
+  0% {
+    transform: rotate(0deg), scale(1.1);
+  }
+  70% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1.1), rotate(360deg);
+  } */
 }

@@ -10,7 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {Array(50000).fill(<Pixel />)}
+        {Array(1000).fill(<Pixel />)}
       </div>
     )
   }

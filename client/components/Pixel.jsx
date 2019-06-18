@@ -8,8 +8,9 @@ class Pixel extends React.Component {
     this.state = {
       value: 0,
       style: {
-        height: '3px',
-        width: '3px',
+        height: '50px',
+        width: '50px',
+        animation: 'rotateScale 1s infinite',
         backgroundColor: this.randomHexColor(),
       }
     }
@@ -29,8 +30,8 @@ class Pixel extends React.Component {
     console.log('click')
     this.setState({
       style: {
-        height: '5px',
-        width: '5px',
+        height: '50px',
+        width: '50px',
         backgroundColor: this.randomHexColor()
       }
     })
