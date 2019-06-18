@@ -5,29 +5,35 @@ class Test extends React.Component {
     super(props);
 
     this.state = {
-      // square: {
-      //   height: "20px",
-      //   width: "20px",
-      //   backgroundColor: this.randomHexColor()
-      // },
       backgroundColor: this.randomHexColor(),
       size: 20
     };
     this.randomHexColor = this.randomHexColor.bind(this);
     this.clickHandler = this.clickHandler.bind(this);
+    this.mouseEnter = this.mouseEnter.bind(this);
+    this.rightClick = this.rightClick.bind(this);
   }
 
   clickHandler() {
     console.log(this);
     this.setState({
-      // square: {
-      //   height: "20px",
-      //   width: "20px",
       backgroundColor: this.randomHexColor(),
-      size: this.state.size * 5
-      // }
+      size: this.state.size * Math.log(3)
     });
   }
+
+  mouseEnter() {
+    this.setState({
+      backgroundColor: "forestgreen"
+    });
+  }
+
+  rightClick = evt => {
+    evt.preventDefault();
+    this.setState({
+      backgroundColor: "black"
+    });
+  };
 
   randomHexColor() {
     return `#${Math.floor(Math.random() * 0x1000000)
@@ -45,6 +51,8 @@ class Test extends React.Component {
           width: `${this.state.size}px`,
           backgroundColor: this.state.backgroundColor
         }}
+        onMouseEnter={this.mouseEnter}
+        onContextMenu={this.rightClick}
       />
     );
   }
