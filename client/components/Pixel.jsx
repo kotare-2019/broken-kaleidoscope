@@ -5,28 +5,33 @@ class Pixel extends React.Component {
   super(props)
 
   this.state = {
-    style: { height: '50px',
-         width: '50px',
-         backgroundColor: 'cornflowerblue', }          
-}
+    style: { height: '40px',
+         width: '40px',
+         backgroundColor: this.randomHexColor(), }          
 
+  }
 this.randomHexColor = this.randomHexColor.bind(this)
 
+  }
 
-const randomHexColor = () =>
-  `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
-}
+  randomHexColor = () => `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
 
-randomHexColor() {
+clickHandler = evt => {
   // Hey React, please change state
   this.setState({
-    backgroundColor: this.state.backgroundColor
+    style: {
+    height: '18px',
+    width: '18px',  
+    // backgroundColor: this.randomHexColor(),
+    backgroundColor: 'fuchsia',
+    }
   })
 }
 
   render() {
    return (
-    <div style={this.state.style}></div>
+    <div style={this.state.style} onMouseEnter={this.clickHandler}></div>
+    
     )
   }
 }
