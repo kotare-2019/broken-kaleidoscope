@@ -8,71 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-
+        {Array(1599).fill(<Pixel />)}
       </div>
     )
   }
