@@ -7,7 +7,14 @@ class Pixel extends React.Component {
         this.state = {
             size: 50,
             backgroundColor: this.randomHexColor(),
+            transition: 'all ease 0.3s'
           }
+    }
+
+    clickHandler = () => {
+        this.setState({
+            backgroundColor: "#159A9A"
+        })
     }
 
     randomHexColor = () => {
@@ -19,11 +26,17 @@ class Pixel extends React.Component {
     render() { 
         return ( 
             <React.Fragment>
-                <div style={{
+                <div
+                style={{
                     height: `${this.state.size}px`,
                     width: `${this.state.size}px`,
                     backgroundColor: this.state.backgroundColor
-                }}/>
+                }}
+                onClick={this.clickHandler} 
+                onMouseEnter={this.handleEnter}
+                onMouseLeave={this.handleLeave}
+                onDragEnter={this.handleDragEnter}/>
+                
             </React.Fragment>
         );
     }
