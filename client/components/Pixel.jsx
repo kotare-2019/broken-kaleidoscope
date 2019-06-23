@@ -6,9 +6,16 @@ class Pixel extends React.Component {
         
         this.state = {
             size: 50,
-            backgroundColor: 'cornflowerblue'
+            backgroundColor: this.randomHexColor(),
           }
     }
+
+    randomHexColor = () => {
+        return `#${Math.floor(Math.random() * 0x1000000)
+            .toString(16)
+            .padStart(6, 0)}`;
+    }
+
     render() { 
         return ( 
             <React.Fragment>

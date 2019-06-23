@@ -9,7 +9,9 @@ class App extends React.Component {
   render() { 
     return (
     <React.Fragment>
-      <Pixel />
+      {Array.from({length: 798}, (v, i) => {
+        return <Pixel key={i} />
+      })} 
     </React.Fragment>
     );
   }
