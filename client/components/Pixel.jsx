@@ -10,6 +10,18 @@ class Pixel extends React.Component {
             transition: 'all ease 0.3s'
           }
     }
+    handleDragEnter = () => {
+        this.setState({
+            backgroundColor: "#103636"
+        })
+    }
+
+    handleRightClick = evt => {
+        evt.preventDefault()
+        this.setState({
+            backgroundColor: "#FFB522"
+        })
+    }
 
     clickHandler = () => {
         this.setState({
@@ -33,9 +45,9 @@ class Pixel extends React.Component {
                     backgroundColor: this.state.backgroundColor
                 }}
                 onClick={this.clickHandler} 
-                onMouseEnter={this.handleEnter}
-                onMouseLeave={this.handleLeave}
-                onDragEnter={this.handleDragEnter}/>
+                onDragEnter={this.handleDragEnter}
+                onContextMenu={this.handleRightClick}
+                />
                 
             </React.Fragment>
         );
