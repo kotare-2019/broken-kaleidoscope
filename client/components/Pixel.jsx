@@ -1,18 +1,21 @@
 import React from 'react';
 
+
+const colors = ['#159A9A', '#399A9A', '#4A68AC', '#FFA75E', '#FF8622', '#FF5E5E', '#AE6E39', '#5A1B1B', "#274FAC", "#16223C", "#226868", '#AE8739', '#FFC95E', '#FFB522', '#AE3939']
+
 class Pixel extends React.Component {
     constructor(props) {
         super(props)
         
         this.state = {
             size: 50,
-            backgroundColor: this.randomHexColor(),
+            backgroundColor: this.colorFromArray(),
             transition: 'all ease 0.3s'
           }
     }
     handleDragEnter = () => {
         this.setState({
-            backgroundColor: "#103636"
+            backgroundColor: "#4A68AC"
         })
     }
 
@@ -27,6 +30,10 @@ class Pixel extends React.Component {
         this.setState({
             backgroundColor: "#159A9A"
         })
+    }
+
+    colorFromArray = () => {
+        return `${colors[(Math.floor(Math.random() * 15))]}`
     }
 
     randomHexColor = () => {
